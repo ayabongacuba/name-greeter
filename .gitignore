@@ -1,0 +1,14 @@
+# Build output (regenerated every time you build)
+build/
+
+# VS Code settings (personal, not shared)
+.vscode/
+
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# Debug files
+*.pdb
+*.ilk
