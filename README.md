@@ -1,113 +1,47 @@
-# Name Greeter
+# name-greeter
 
-A simple C++ command-line application that reads a name from standard input and prints a personalised greeting.
+A simple C++ console application that demonstrates multi-file compilation.
 
-The project demonstrates basic object-oriented programming and the separation of class declarations and implementations across multiple C++ source files.
+## Description
 
-## Features
+This project is a small command-line program that asks the user for their name and greets them. It is intentionally split across three files to show how a typical C++ project is organized with separate header and implementation files.
 
-- Reads a name from standard input.
-- Prints a personalised greeting.
-- Uses a custom `Greeter` class.
-- Separates the class declaration from its implementation.
+## Files
 
-## Project Structure
+- `main.cpp` — Entry point of the program
+- `Greeter.h` — Declaration of the `Greeter` class
+- `Greeter.cpp` — Implementation of the `Greeter` class
 
-```text
-name-greeter/
-├── main.cpp
-├── Greeter.h
-├── Greeter.cpp
-├── README.md
-├── DESIGN.md
-└── .gitignore
+## How to Build and Run
+
+1. Open the project folder in VS Code.
+2. Press `Ctrl + Shift + P` to open the Command Palette.
+3. Run `C/C++ Runner: Build Folder`.
+4. Run `C/C++ Runner: Run Folder`.
+5. Type your name when prompted and press Enter.
+
+## Example Output
+
 ```
-
-| File | Description |
-|---|---|
-| `main.cpp` | Contains the program entry point and coordinates the greeting process. |
-| `Greeter.h` | Declares the `Greeter` class, its private data member and public methods. |
-| `Greeter.cpp` | Defines the constructor and methods responsible for reading and displaying the greeting. |
-| `DESIGN.md` | Explains the program flow, file organisation and design decisions. |
-| `.gitignore` | Specifies files and directories that Git should not track. |
+Alice
+Hello Alice!
+```
 
 ## Requirements
 
-- A C++11-compatible compiler, such as GCC or Clang.
-- A terminal or command-line environment.
+- A C++17 compiler (tested with g++ 16.2.0)
+- VS Code with the [C/C++ Runner](https://marketplace.visualstudio.com/items?itemName=franneck94.c-cpp-runner) extension
 
-Visual Studio Code is optional. The application can be compiled independently of any particular editor or extension.
+## Future Improvements
 
-## Build Instructions
+- Add support for multiple greetings in different languages
+- Store a history of greetings in a file
+- Add unit tests using a testing framework
 
-Clone the repository:
+## Author
 
-```bash
-git clone https://github.com/ayabongacuba/name-greeter.git
-```
-
-Navigate into the project directory:
-
-```bash
-cd name-greeter
-```
-
-Create a directory for the compiled program:
-
-```bash
-mkdir -p build
-```
-
-Compile the source files:
-
-```bash
-g++ -std=c++11 -Wall -Wextra -Wpedantic main.cpp Greeter.cpp -o build/name-greeter
-```
-
-## Running the Application
-
-Run the compiled program:
-
-```bash
-./build/name-greeter
-```
-
-Enter a name when the program waits for input.
-
-### Example
-
-Input:
-
-```text
-Ayabonga
-```
-
-Output:
-
-```text
-Hello Ayabonga!
-```
-
-## Implementation Overview
-
-The application uses a `Greeter` class to encapsulate the name and the operations performed on it.
-
-The class declaration is placed in `Greeter.h`, while its method definitions are implemented in `Greeter.cpp`. The `main()` function in `main.cpp` creates a `Greeter` object and calls its methods.
-
-This structure demonstrates how a C++ program can be organised into multiple source files and compiled and linked into a single executable.
-
-## Current Limitations
-
-- Input is currently limited to a single word. Names containing spaces are not supported.
-- The application does not display an input prompt.
-- Input validation and error handling are not implemented.
-
-These are potential areas for further development.
-
-## Design
-
-For a more detailed explanation of the program flow, class structure and implementation decisions, see [DESIGN.md](DESIGN.md).
+Created as a learning project for practicing multi-file C++ compilation.
 
 ## License
 
-No open-source licence has been selected for this repository yet. Public visibility does not automatically grant permission to reuse, modify or distribute the code. See [GitHub's licensing documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) before reusing it.
+This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
