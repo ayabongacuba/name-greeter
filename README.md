@@ -108,6 +108,20 @@ These are potential areas for further development.
 
 For a more detailed explanation of the program flow, class structure and implementation decisions, see [DESIGN.md](DESIGN.md).
 
+## What This Project Demonstrates
+
+- Defining a class with private data and public methods.
+- Separating a class declaration (`.h`) from its implementation (`.cpp`).
+- Creating and using an object in `main()`.
+- Reading from standard input and writing to standard output.
+- Compiling and linking multiple C++ source files into one executable.
+
+## Complexity
+
+Let **N** be the number of characters in the input name. Reading and printing the name take O(N) time. The stored name uses O(N) space. The application has a constant number of operations around that input.
+
+This is a small introductory project, so the emphasis is on clear class organisation and a reproducible build rather than advanced algorithms.
+
 ## License
 
 No open-source licence has been selected for this repository yet. Public visibility does not automatically grant permission to reuse, modify or distribute the code. See [GitHub's licensing documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) before reusing it.
