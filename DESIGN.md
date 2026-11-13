@@ -123,3 +123,13 @@ Possible future improvements include:
 - Display a prompt before reading input.
 - Handle empty input and input errors.
 - Add automated tests for the greeting behaviour.
+
+## 8. Complexity
+
+Let **N** be the number of characters in the single-word input.
+
+- `getName()` reads the input into a `std::string`, taking O(N) time and O(N) storage for the name.
+- `greetName()` writes the stored name as part of the greeting, taking O(N) time.
+- The overall program therefore takes O(N) time and O(N) space, where N is the input length.
+
+These bounds describe the work that grows with the input name. The program otherwise performs a fixed number of operations.
